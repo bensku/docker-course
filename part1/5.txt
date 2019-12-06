@@ -1,0 +1,8 @@
+docker run -it ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+
+Do NOT give a website, curl needs to be installed. In different terminal, do
+docker attach -it <name> bash
+apt update
+apt install curl
+
+Then you can go back, give a website and it works

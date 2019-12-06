@@ -1,0 +1,12 @@
+Fri, 06 Dec 2019 11:16:47 GMT
+Fri, 06 Dec 2019 11:16:50 GMT
+Fri, 06 Dec 2019 11:16:53 GMT
+Fri, 06 Dec 2019 11:16:56 GMT
+Secret message is:
+"Volume bind mount is easy"
+Fri, 06 Dec 2019 11:17:02 GMT
+Fri, 06 Dec 2019 11:17:05 GMT
+Fri, 06 Dec 2019 11:17:08 GMT
+Fri, 06 Dec 2019 11:17:11 GMT
+Secret message is:
+"Volume bind mount is easy"
