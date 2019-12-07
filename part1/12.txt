@@ -1,0 +1,2 @@
+See 10 and 11 folders. The Dockerfiles have relevant environment variables
+present as of this commit.
