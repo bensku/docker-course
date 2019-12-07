@@ -1,0 +1,3 @@
+git clone https://github.com/docker-hy/rails-example-project
+docker build -t ruby .
+docker run -p 3000:3000 ruby
