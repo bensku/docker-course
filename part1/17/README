@@ -1,0 +1,16 @@
+I've built a Docker image that contains latest Lua (5.4.2) and a few commonly
+used libraries. It is based on Alpine and weighs less than 10 mb!
+
+The image has 'lua' as default command, but entrypoint is left unchanged to
+allow easy access to other commands (e.g. 'luac' for precompilation).
+
+Included libraries are:
+* lua-cjson (JSON support; old version due to a bug in latest release)
+* LuaFileSystem (file system access beyond what ANSI C offers)
+* LuaSocket (TCP/UDP sockets)
+* LuaSec (SSL support, mainly for sockets)
+
+The image is available as https://hub.docker.com/r/hybensku/lua-demo.
+
+Command to run a Lua REPL with all libraries available:
+docker run -it --rm hybensku/lua-demo

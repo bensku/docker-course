@@ -1,0 +1,6 @@
+A Python web server based on aiohttp.
+
+To run, use:
+docker run --rm -it -p 8080:8080 hybensku/python-hello
+
+If everything worked, http://localhost:8080/hello has a message available.
