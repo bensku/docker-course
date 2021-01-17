@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  front:
+    image: front
+    environment:
+      API_URL: http://localhost/api
+  back:
+    image: back
+    volumes:
+      - ./logs.txt:/app/logs.txt
+    environment:
+      REDIS: redis
+      DB_HOST: postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: insecure
+      FRONT_URL: http://localhost
+  redis:
+    image: redis
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: insecure
+      version: '3'
+    volumes:
+      - ./database:/var/lib/postgresql/data
+  proxy:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - '80:80'

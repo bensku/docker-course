@@ -1,0 +1,5 @@
+This compose file expects that 'front' and 'back' images are available.
+Build instructions are in part1/10 and part1/11.
+
+docker-compose can build images from Git, but the example repositories
+lack Dockerfiles needed to do this.

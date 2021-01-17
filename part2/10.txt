@@ -1,0 +1,7 @@
+All buttons are already functional in exercise 2.8. I followed
+READMEs of frontend and backend and set API_URL and BACK_URL correctly
+in docker-compose file.
+
+I could have set the variables in Dockerfiles, but since URLs are very
+deployment-specific I don't think it would have made sense. Original
+Dockerfiles from part1 exercises 10 and 11 are still up to date.

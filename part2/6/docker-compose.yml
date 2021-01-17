@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  front:
+    image: front
+    ports:
+      - 5000:5000
+  back:
+    image: back
+    ports:
+      - 8000:8000
+    volumes:
+      - ./logs.txt:/app/logs.txt
+    environment:
+      REDIS: redis
+      DB_HOST: postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: insecure
+  redis:
+    image: redis
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: insecure
+      version: '3'
