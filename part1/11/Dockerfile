@@ -2,7 +2,7 @@ FROM ubuntu
 WORKDIR /app
 
 RUN apt-get -qq update && apt-get -qq install curl
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
 RUN apt-get -qq install nodejs
 
 COPY backend-example-docker .

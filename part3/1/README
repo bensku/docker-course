@@ -1,0 +1,9 @@
+Before building frontend/backend, remember to clone the
+corresponding Git repository. This is just like part1/10,11.
+
+https://github.com/docker-hy/frontend-example-docker
+https://github.com/docker-hy/backend-example-docker
+
+Image size improvements from naive part 1 Dockerfiles:
+frontend: 462mb -> 416mb (46mb)
+backend: 268mb -> 222mb (46mb)

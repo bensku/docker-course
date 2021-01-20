@@ -1,0 +1,9 @@
+Before building frontend/backend, remember to clone the
+corresponding Git repository. This is just like part1/10,11.
+
+https://github.com/docker-hy/frontend-example-docker
+https://github.com/docker-hy/backend-example-docker
+
+Both frontend and backend are executed as uid/gid 5050:5050.
+For backend, ensure that logs.txt is writable for uid 5050
+by e.g. chown 5050 logs.txt.

@@ -1,0 +1,3 @@
+Multi-stage build reduces image size by about 20mb. If the frontend
+had separate development dependencies or alternative for serve was used,
+chances are the image size would be a fraction of that.

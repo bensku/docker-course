@@ -1,0 +1,13 @@
+I chose to work on my image from part 1 exercise 17. Its size is about as
+small as it can get (less than 10mb):
+
+* Alpine used as base image (scratch might win a few megabytes at most)
+* Lua executables and preinstalled libraries are tiny
+* Multi-stage build is used to compile native code (Lua and libraries)
+  - no GCC is needed in final container
+
+Security, on the other hand... It is perhaps not the best
+idea to run Lua scripts with filesystem and network access as root, even
+inside a container.
+
+Lua now has its own user, and starts with working directory set to /home/lua.
